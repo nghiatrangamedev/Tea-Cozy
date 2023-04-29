@@ -1,0 +1,162 @@
+/* Universal selector */ 
+*, *::before ,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+/* Header */
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+}
+/* Logo */
+#logo {
+    margin-left: 10px;
+    height: 50px;
+    flex: 1 1;
+}
+/* Navbar */
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 350px;
+    margin-right: 10px;
+}
+
+a, a:visited {
+    color: seashell;
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+a:active {
+    color: white;
+}
+
+
+/* Main */
+main {
+    margin-top: 69px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text  h2 {
+    margin-bottom: 15px;
+}
+
+/* Out Misson */
+#out-misson {
+    width: 1200px;
+    height: 700px;
+    background-image: url("../images/img-mission-background.jpg");
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#out-misson article {
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Tea Of The Month */
+#tea-of-the-month {
+    width: 1000px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#cozy-teas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.tea-img {
+    width: 300px;
+    height: 200px;
+}
+
+figure {
+    margin: 20px 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Location */
+#location {
+    margin: 20px auto;
+    width: 1200px;
+    height: 500px;
+    background-image: url("../images/img-locations-background.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locations {
+    display: inline-flex;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 40px;
+    opacity: 1;
+}
+
+/* The Cozy Tea */
+#the-cozy-tea {
+    margin: 20px auto;
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+}
